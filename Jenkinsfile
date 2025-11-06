@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         AWS_REGION = 'us-east-1'
-        ECR_REPO = 'public.ecr.aws/your-alias/java-ecr-demo' // replace with your ECR URI
+        ECR_REPO = 'public.ecr.aws/d8u9f9b9/java-ecr-demo' // replace with your ECR URI
         IMAGE_TAG = "${BUILD_NUMBER}"
     }
 
@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 echo "Cloning or using local code..."
-                git branch: 'main', url: 'https://github.com/<your-username>/java-ecr-demo.git'
+                git branch: 'main', url: 'https://github.com/bhargavpr99-sudo/java-ecr-demo.git'
                 // or comment above and use local code:
                 // sh 'ls -la'
             }
