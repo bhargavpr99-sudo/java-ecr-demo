@@ -12,3 +12,4 @@ RUN javac HelloWorld.java
 
 # Run the compiled Java program
 CMD ["java", "HelloWorld"]
+
